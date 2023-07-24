@@ -8,16 +8,11 @@ export default {
   input: "src/main.js",
   output: [
     {
-      file: "dist/bundle.esm.js",
-      format: "esm",
+      file: "dist/bundle.umd.js",
+      format: "umd",
+      name: "PragmaBot",
       sourcemap: true,
     },
-    // {
-    //   file: "dist/bundle.umd.js",
-    //   format: "umd",
-    //   name: "PragmaBot",
-    //   sourcemap: true,
-    // },
   ],
   plugins: [
     peerDepsExternal(),
