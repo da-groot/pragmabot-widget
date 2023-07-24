@@ -1,9 +1,9 @@
-import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
+import tailwindcss from "tailwindcss";
 
-export default defineConfig({
-  plugins: [react(), cssInjectedByJsPlugin()],
+export default {
+  plugins: [react(), tailwindcss(), cssInjectedByJsPlugin()],
   build: {
     rollupOptions: {
       input: {
@@ -14,4 +14,4 @@ export default defineConfig({
       },
     },
   },
-});
+};
