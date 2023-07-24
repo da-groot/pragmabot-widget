@@ -8,10 +8,11 @@ export default {
   input: "src/main.js",
   output: [
     {
-      file: "dist/bundle.umd.js",
-      format: "umd",
+      file: "dist/bundle.iife.js",
+      format: "iife",
       name: "PragmaBot",
       sourcemap: true,
+      plugins: [terser()],
     },
   ],
   plugins: [

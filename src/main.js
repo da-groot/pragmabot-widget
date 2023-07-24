@@ -112,4 +112,4 @@ class PragmaBot {
   }
 }
 
-export default PragmaBot;
+window.PragmaBot = PragmaBot;
